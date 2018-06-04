@@ -25,16 +25,17 @@ and open the template in the editor.
             homeDistrict = prompt("Enter your homeDistrict:", "");
             fatherName = prompt("Enter your fatherName:", "");
             motherName = prompt("Enter your motherName:", "");
-            result = firstName + " " + lastName + "<br/>";
-            document.write("Full Name:", result);
-            result = homeDistrict + "<br/>";
-            document.write("Home District :", result);
-            result = fatherName + "<br/>";
-            document.write("Father Name :", result);
-            result = motherName + "<br/>";
-            document.write("Mother Name :", result);
+			
+			result = firstName +" "+lastName;
+			document.write("Full Name: ", result+"<br/>");
+			
+            result = homeDistrict + fatherName + motherName;
+                    document.write("HomeDistrict: "+homeDistrict+"<br/>"+
+					"FatherName: "+fatherName+"<br/>"+ 
+					"MotherName: "+motherName);
+            
 
-            document.write("First Name: " + firstName + "<br/>" + " Last Name: " + lastName);
+
         </script> 
     </body>
 </html>
