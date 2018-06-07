@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script language="javascript">
+var trees=new Array("Elm","Pine","Oak");
+var bigBush=trees.join(" | ");
+document.write(bigBush);
+
+
+document.write("<br/>");
+
+
+document.write(typeof trees + "<br/>");
+document.write(typeof bigBush);
+
+
+//////////////////toString////////////////////
+document.write("<hr/>");
+
+var names=["A","B","C"];
+document.write(typeof names+"<br/>");
+var newNames=names.toString();
+document.write(newNames);
+document.write(typeof newNames);
+
+//////////////////ConcatArray////////////////////
+document.write("<hr/>");
+
+
+var trees1=new Array("Elm","Pine","Oak");
+var trees2=new Array("Book","Pen");
+var biggerBush=trees1.concat(trees2);
+document.write(typeof biggerBush);
+document.write(biggerBush);
+alert(bigBush);
+
+
+//////////////////sort////////////////////
+document.write("<hr/>");
+
+biggerBush.sort();
+document.write(biggerBush);
+
+
+
+//////////////////Reverse////////////////////
+document.write("<hr/>");
+
+biggerBush.reverse();
+document.write(biggerBush);
+
+
+
+
+//////////////////Slice Array////////////////////
+document.write("<hr/>");
+
+var students=['Ruhul', 'Mortuza', 70 , 60, 50];
+document.write(students.slice(2,4)+"<br/>");
+document.write(students.slice(4)+"<br/>");
+document.write(students.slice(-4)+"<br/>");
+document.write(students.slice(0,2)+"<br/>");
+
+
+
+//////////////////Slice Array////////////////////
+document.write("<hr/>");
+
+
+
+var countries=['BD','USA', 'Japan'];
+//last 1ta add kore
+
+countries.push('Russia');
+document.write(countries+"<hr/>");
+
+//last 1ta remove kore
+countries.pop();
+document.write(countries+"<hr/>");
+
+
+//fast 1ta remove kore
+countries.shift();
+document.write(countries+"<hr/>");
+
+
+//fast 1ta add kore
+countries.unshift("BDx");
+document.write(countries+"<hr/>");
+
+</script>
+
+</body>
+</html>
